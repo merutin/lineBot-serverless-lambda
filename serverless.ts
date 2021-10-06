@@ -19,10 +19,11 @@ const serverlessConfiguration: AWS = {
     },
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1",
+      CHANNEL_ACCESS_TOKEN: "",
+      CHANNEL_SECRET: "",
     },
     lambdaHashingVersion: "20201221",
   },
-  // import the function via paths
   functions: {
     lineTest: {
       handler: "src/handler.lineTest",
